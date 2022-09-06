@@ -1,4 +1,4 @@
-final fw rules for query: , config: release/:
+final fw rules for query: :
 src: 0.0.0.0/0 dst_ns: [default] dst_pods: [frontend] conn: TCP 8080
 src: ::/0 dst_ns: [default] dst_pods: [frontend] conn: TCP 8080
 src_ns: [default] src_pods: [app in (cartservice,checkoutservice,frontend,loadgenerator,recommendationservice)] dst: 0.0.0.0/0 conn: UDP 53
