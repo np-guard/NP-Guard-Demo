@@ -41,7 +41,7 @@ cd cluster-topology-analyzer
 go mod download
 make
 
-$HOME/cluster-topology-analyzer/bin/net-top -dirpath $HOME/microservices-demo -commitid c04cf77a7550d932821f5a5c5c6936ab02402fea -giturl https://github.com/GoogleCloudPlatform/microservices-demo -gitbranch main -netpols -outputfile $HOME/microservices-demo/release/netpols.yaml 
+$HOME/cluster-topology-analyzer/bin/net-top -dirpath $HOME/microservices-demo -netpols -outputfile $HOME/microservices-demo/release/netpols.yaml 
 ```
 Check the [synthesized network policies yaml file](synthesis/netpols.yaml).
 ### 3) Connectivity visualization after adding network policies
