@@ -14,7 +14,7 @@ nca --connectivity -r $HOME/microservices-demo/release/
 Consider various formats of connectivity reports:
 
 ```commandline
-nca --connectivity -r $HOME/microservices-demo/release/ -o dot -f demo-connectivity-1.dot
+nca --connectivity -r $HOME/microservices-demo/release/ -o txt -f demo-connectivity-1.txt
 ```
 
 ```commandline
@@ -26,8 +26,14 @@ nca --connectivity -r $HOME/microservices-demo/release/ -o md -f demo-connectivi
 ```
 
 ```commandline
-nca --connectivity -r $HOME/microservices-demo/release/ -o txt -f demo-connectivity-1.txt
+nca --connectivity -r $HOME/microservices-demo/release/ -o dot -f demo-connectivity-1.dot
 ```
+
+
+The dot format report can be converted to a graph by [Graphviz](https://graphviz.org).
+Graphviz should be installed, and then this [python script](scripts/view_dot_graph.py) can be used to create the graph.
+
+
 Check the [connectivity report files](analysis_before_netpols_added).
 
 ### 2) Synthesis of network policies
