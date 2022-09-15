@@ -31,7 +31,12 @@ nca --connectivity -r $HOME/microservices-demo/release/ -o dot -f demo-connectiv
 
 
 The dot format report can be converted to a graph by [Graphviz](https://graphviz.org).
-Graphviz should be installed, and then this [python script](scripts/view_dot_graph.py) can be used to create the graph.
+Graphviz should be installed, and then this command can be used to create the graph:
+
+```commandline
+dot -Tpng -O  demo-connectivity-1.dot
+```
+
 
 
 Check the [connectivity report files](analysis_before_netpols_added).
