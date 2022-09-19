@@ -1,5 +1,7 @@
 # NP-Guard Demo
 
+This demo is referenced in [this blog post](https://medium.com/np-guard/can-you-protect-k8s-microservices-from-day-zero-network-policies-made-easy-261f6b6c107e).
+
 ### 1) Connectivity visualization before adding network policies
 Clone the microservices demo repo, install and run network-config-analyzer (https://github.com/np-guard/network-config-analyzer). \
 Make sure you have Python 3.8 or above on your platform.
